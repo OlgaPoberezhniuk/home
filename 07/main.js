@@ -8,46 +8,32 @@ console.log('result', result);
 
 function prioritySort(array, dataPriority) {
 
-function compareNumeric(a, b) {
-        if (a>b) return 1;
-        if (a<b) return -1;
+    function compareNumeric(a, b) {
+        if (a > b) return 1;
+        if (a < b) return -1;
     };
-var number = [1, 500, 30];
-number.sort(compareNumeric);
-//console.log(number);
-    
-    //еще вариант
-//var number = [30, 1, 500];
-    //number.sort(function (a, b) {
-    //return a - b;
-    //});
-//console.log(number); 
+    var number = [1, 500, 30];
+    number.sort(compareNumeric);
 
-function compareString(a,b) {
-        if (a>b) return 1;
-        if (a<b) return -1;
+    function compareString(a, b) {
+        if (a > b) return 1;
+        if (a < b) return -1;
     };
-var string = ['firstString', 'abc'];
-string.sort(compareString);
-//console.log (string);
+    var string = ['firstString', 'abc'];
+    string.sort(compareString);
 
-//еще вариант
-//var string = ['firstString', 'abc'];
-//string.sort();
-//console.log(string);
+    var boolean = [true, false, true];
+    boolean.sort(function (a, b) {
+        return b - a;
+    });
 
-var boolean = [true, false, true];
-boolean.sort(function (a, b) {
-return b - a;
-});
-//console.log (boolean);
+    var array = [null];
 
-var array = [null];
+    var object = {test: 'Object'};
 
-var object  =  {test: 'Object'};
+    var undefined = [undefined];
 
-var undefined = [undefined];
-var result = number.concat(null, string, object, undefined, boolean);
-console.log('result', result);
+    var result = number.concat(null, string, object, undefined, boolean);
+    console.log('result', result);
 }
 
