@@ -3,8 +3,24 @@ html
     head
         meta(charset="UTF-8")
         meta(lang="en")
-        block head
+        title home work 04
     body
-        block body
-        br
-        a(href="https://mail.ru") mail.ru
+        div(class="conteiner", style="width: 300px")
+            div(class="header")
+                h1(id="top")
+                    block top
+            div(class="navigation")
+                p Navigation:
+                    <a href="./Index.html">Home</a>
+                    <a href="./About.html">About</a>
+                    hr
+            div(class="content", style="padding-left: 10px")
+                block body
+                hr
+            div(class="footer")
+            p
+                a(href="#top") Up
+                block hrefBottom
+            div(class="invisible", style="height: 20px")
+                
+        
