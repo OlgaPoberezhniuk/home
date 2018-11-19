@@ -1,10 +1,98 @@
-.slides {
-    width: 600px;
-    height: 480px;
 
+body, html {
     overflow: hidden;
-
-    transition: .2s;
-
-    display: flex;
 }
+
+.slides {
+    width: 800px;
+    height: 600px;
+    overflow: hidden;
+    transition: .2s;
+    display: flex;
+    margin-left: 20%;
+    position: relative;
+}
+
+.slides {
+    border-radius: 30px;
+}
+
+.slide {
+    position: relative;
+}
+
+#slider-right {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    padding: 12px 40px;
+    margin: 10px 20px;
+    border-radius: 30px;
+    background-image: linear-gradient(45deg, #6ab1d7 0%, #33d9de 50%, #002878 100%);
+    background-position: 50% 0;
+    background-size: 200% 200%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+    box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);
+    cursor: pointer;
+}
+
+#slider-left {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    padding: 12px 40px;
+    margin: 10px 20px;
+    border-radius: 30px;
+    background-image: linear-gradient(45deg, #6ab1d7 0%, #33d9de 50%, #002878 100%);
+    background-position: 50% 0;
+    background-size: 100% 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+    box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);
+    cursor: pointer;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.name {
+    display: flex;
+    align-items: baseline;
+    background: white;
+    font-family: Georgia;
+    font-size: 30px;
+    font-weight: normal;
+    cursor: pointer;
+    height: 10px;
+
+    text-shadow: 1px 1px 0 hsl(20, 100%, 50%),
+    2px 2px 0 hsl(20, 100%, 50%),
+    3px 3px 0 hsl(35, 100%, 50%),
+    4px 4px 0 hsl(35, 100%, 50%),
+    5px 5px 0 hsl(45, 100%, 50%),
+    6px 6px 0 hsl(45, 100%, 55%),
+    7px 7px 0 hsl(55, 100%, 60%),
+    8px 8px 0 hsl(55, 100%, 65%);
+    color: hsl(0, 100%, 40%);
+    transition: all 1s;
+}
+
+.name:hover {
+    text-shadow: 1px -1px 0 hsl(290, 100%, 40%),
+    2px -2px 0 hsl(290, 100%, 40%),
+    3px -3px 0 hsl(280, 100%, 60%),
+    4px -4px 0 hsl(280, 100%, 60%),
+    5px -5px 0 hsl(270, 100%, 75%),
+    6px -6px 0 hsl(270, 100%, 80%),
+    7px -7px 0 hsl(260, 100%, 85%),
+    8px -8px 0 hsl(260, 100%, 90%);
+    color: hsl(300, 100%, 30%);
+}
+
