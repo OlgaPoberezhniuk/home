@@ -1,39 +1,24 @@
-var data = [1, 'firstString', 30, 500, true, true, null, 'abc', false, {test: 'Object'}, undefined],
-    result;
+var array1 = [1, 2, 3, 4, 5],
+    array2 = [9, 7, 3];
 
-result = prioritySort(data, ['number', 'null', 'string', 'object', 'undefined', 'boolean']);
-//expected result [1, 30, 500, null, 'abc', 'firstString', {test: 'Object'}, undefined, true, true, false]
+var result1 = reduce(array1),
+    result2 = reduce(array2);
 
-console.log('result', result);
+console.log('result1:', result1);
+// expected result: 15
 
-function prioritySort(array, dataPriority) {
+console.log('result2:', result2);
 
-    function compareNumeric(a, b) {
-        if (a > b) return 1;
-        if (a < b) return -1;
-    };
-    var number = [1, 500, 30];
-    number.sort(compareNumeric);
+// expected result: 19
 
-    function compareString(a, b) {
-        if (a > b) return 1;
-        if (a < b) return -1;
-    };
-    var string = ['firstString', 'abc'];
-    string.sort(compareString);
+function reduce(array) {
+    var result;
 
-    var boolean = [true, false, true];
-    boolean.sort(function (a, b) {
-        return b - a;
-    });
+    var result = 0;
+    for (var i = 0; i < array.length; i++) {
+        result += array[i];
+    }
 
-    var array = [null];
 
-    var object = {test: 'Object'};
-
-    var undefined = [undefined];
-
-    var result = number.concat(null, string, object, undefined, boolean);
-    console.log('result', result);
+    return result;
 }
-
