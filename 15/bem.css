@@ -1,0 +1,39 @@
+.main-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+}
+
+.main-menu__item {
+    text-align: center;
+    color: #204E2E;
+    background-color: #B13F13;
+    cursor: pointer;
+    font-size: 14px;
+    height: 50px;
+    line-height: 38px;
+    border: 1px solid #e7e7e7;
+    display: table-cell;
+    text-decoration: none;
+}
+
+.select {
+    border: 1px solid #076C82;
+    background-color: #B13F13;
+}
+
+.main-menu__option {
+    text-align: center;
+    color: #204E2E;
+    background-color: #A0B113;
+    cursor: pointer;
+    font-size: 14px;
+    height: 50px;
+    line-height: 38px;
+    border: 1px solid #e7e7e7;
+    display: table-cell;
+    text-decoration: none;
+}
