@@ -1,0 +1,48 @@
+$firstColor: #767676
+$backgroundColor: #A0B113
+$cursor: pointer
+$liststyle: none
+$padding: 0
+
+@mixin border
+  border: 1px solid #e7e7e7
+
+@mixin margin
+  margin: 0
+
+@mixin size
+  font-size: 14px
+  height: 50px
+  line-height: 38px
+
+@mixin display
+  display: table-cell
+  text-decoration: none
+  text-align: center
+  color: #204E2E
+
+  .main-menu
+  @include margin
+  padding: $padding
+  list-style: $liststyle
+  width: 100%
+  display:table
+  table-layout: fixed
+
+  &_item
+    @include display
+    cursor: $cursor
+    @include size
+    background-color: #B13F13
+    @include border
+
+  &_option
+    backgroun-color: $backgroundColor
+    cursor: $cursor
+    @include size
+    @include display
+    @include border
+
+.select
+  backgroun-color: $backgroundColor
+  border: 1px solid #076C82
